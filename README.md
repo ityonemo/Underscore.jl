@@ -16,11 +16,11 @@ can't you just use normal lambdas?
 
 A:
 --
-using this syntax you save five characters!
+using this syntax you save zero characters!
 ```julia
     julia> using Underscore
-    julia> "hello" |> (@_ string(" world"))       #versus
-    julia> "hello" |> (x) -> string(x, " world")
+    julia> "hello" |> (@_ string(" world"));       #versus
+    julia> "hello" |> x->string(x," world");
 ```
 
 Inspired by Elixir.
